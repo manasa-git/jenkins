@@ -1,9 +1,9 @@
 
 node {
 
-  //  stage('checkout') {
+   stage('checkout') {
     
-  // git 'https://github.com/manasa-git/jenkins.git'
+   git 'https://github.com/manasa-git/jenkins.git'
     
     }
 
@@ -21,3 +21,4 @@ node {
         archiveArtifacts 'target/*.jar'    
         }
     }
+}
