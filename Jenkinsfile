@@ -21,4 +21,3 @@ de {
         archiveArtifacts 'target/*.jar'    
         }
     }
-}
