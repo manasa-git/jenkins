@@ -20,6 +20,11 @@ node {
 
         archiveArtifacts 'target/*.jar'    
         }
+	
+	stage('Unit tests') {
+		
+	junit 'target/surefire-reports/*.xml'
+	}
        
         stage('Email_notification'){
 
