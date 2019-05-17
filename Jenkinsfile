@@ -20,5 +20,13 @@ node {
 
         archiveArtifacts 'target/*.jar'    
         }
+       
+        stage('Email_notification'){
+
+        mail bcc: '', body: '''Hi, Welcome to Jenkins server.
+	     Thanks,
+	     Manasa.''', cc: '', from: '', replyTo: '', subject: 'build notification', to: 'meetmanasa.iiit@gmail.com'
+	
+        }
     }
 }
